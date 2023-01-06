@@ -45,6 +45,12 @@
 .thumb{
     width: 80px;
 }
+.thumb:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.thumb.
 
 p{
     margin-bottom: 0;
@@ -56,4 +62,13 @@ p{
 
 .avatar:hover{
     border: 2px solid hsl(26, 100%, 55%);
+    cursor: pointer;
+}
+
+.active-background{
+    border:2px solid hsl(26, 100%, 55%);
+}
+
+.thumb-active{
+    opacity: 0.25;
 }
