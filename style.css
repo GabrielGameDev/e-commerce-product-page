@@ -1,3 +1,22 @@
 .nav-link:hover{
-    color: red;
+    color: hsl(220, 13%, 13%);
+    border-bottom: 1px solid hsl(26, 100%, 55%);
+}
+
+.navbar{
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.main-img{
+    max-width: 400px;
+    border-radius: 5%;
+}
+
+.text-title{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+}
+
+.thumb{
+    width: 100px;
 }
