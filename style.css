@@ -50,8 +50,6 @@
     cursor: pointer;
 }
 
-.thumb.
-
 p{
     margin-bottom: 0;
 }
@@ -72,3 +70,5 @@ p{
 .thumb-active{
     opacity: 0.25;
 }
+
+
