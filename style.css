@@ -53,3 +53,7 @@ p{
 .btn-warning{
     background-color: hsl(26, 100%, 55%);
 }
+
+.avatar:hover{
+    border: 2px solid hsl(26, 100%, 55%);
+}
