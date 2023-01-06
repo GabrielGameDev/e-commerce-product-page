@@ -4,6 +4,7 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstra
 const btn_less = document.getElementById('btn_less');
 const btn_plus = document.getElementById('btn_plus');
 const amountText = document.getElementById('amount');
+const cartNumber = document.getElementById('cart-number');
 
 let amount = 0
 
@@ -19,3 +20,10 @@ btn_plus.addEventListener('click', () => {
     amount += 1;
     amountText.innerHTML = amount;
 });
+
+function addToCart() {
+    cartNumber.innerHTML = amount;
+    cartNumber.classList.remove('d-none');
+    cartNumber.classList.add('d-inline');
+    
+}

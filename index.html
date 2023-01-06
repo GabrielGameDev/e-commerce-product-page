@@ -73,7 +73,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="position-relative">
             <img
               src="./images/icon-cart.svg"
               alt="cart"
@@ -83,7 +83,11 @@
               data-bs-placement="bottom"
               data-bs-content="Your cart is empty"
             />
-
+            <span
+              class="position-absolute bg-dark-orange rounded-circle px-2 text-white cart-number d-none"
+              id="cart-number"
+              >3</span
+            >
             <img
               class="rounded-circle avatar"
               src="./images/image-avatar.png"
@@ -98,7 +102,7 @@
     <main>
       <section class="m-5 d-flex justify-content-center">
         <div class="row">
-          <div class="col-6 text-center">
+          <div class="col text-center">
             <img
               class="main-img"
               src="./images/image-product-1.jpg"
@@ -130,7 +134,7 @@
               />
             </div>
           </div>
-          <div class="col-6">
+          <div class="col">
             <p class="text-title">SNEAKER COMPANY</p>
             <h3 class="display-5 text-black fw-bolder">
               Fall Limited Edition Sneakers
@@ -154,7 +158,10 @@
                 <span class="text-black fw-bolder" id="amount">0</span>
                 <span class="orange fw-bolder fs-4 btn" id="btn_plus">+</span>
               </div>
-              <button class="btn px-5 py-2 btn-warning white">
+              <button
+                class="btn px-5 py-2 btn-warning white"
+                onclick="addToCart()"
+              >
                 <img src="images/icon-cart.svg" alt="" />
                 Add to cart
               </button>

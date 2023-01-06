@@ -30,6 +30,10 @@
     color: hsl(0, 0%, 100%);
 }
 
+.bg-dark-orange{
+    background-color: hsl(26, 100%, 55%);
+}
+
 .bg-orange{
     background-color: hsl(25, 100%, 94%);
 }
@@ -71,4 +75,6 @@ p{
     opacity: 0.25;
 }
 
-
+.cart-number{
+    left: 70px;
+}
