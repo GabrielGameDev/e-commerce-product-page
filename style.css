@@ -1,3 +1,7 @@
+*{
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
 .nav-link:hover{
     color: hsl(220, 13%, 13%);
     border-bottom: 1px solid hsl(26, 100%, 55%);
@@ -17,6 +21,34 @@
     font-weight: 700;
 }
 
+.orange{
+    color: hsl(26, 100%, 55%);
+}
+
+.white{
+    color: hsl(0, 0%, 100%);
+}
+
+.bg-orange{
+    background-color: hsl(25, 100%, 94%);
+}
+
+.dGrayBlue{
+    color: hsl(219, 9%, 45%);
+}
+
+.bg-gBlue{
+    background-color: hsl(223, 64%, 98%);
+}
+
 .thumb{
-    width: 100px;
+    width: 80px;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+.btn-warning{
+    background-color: hsl(26, 100%, 55%);
 }

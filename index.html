@@ -21,6 +21,12 @@
       crossorigin="anonymous"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -68,57 +74,79 @@
           </div>
 
           <div>
-            <img src="./images/icon-cart.svg" alt="cart" />
+            <img src="./images/icon-cart.svg" alt="cart" class="mx-5" />
 
-            <img src="./images/image-avatar.png" alt="profile image" />
+            <img
+              src="./images/image-avatar.png"
+              alt="profile image"
+              width="50px"
+            />
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <section class="container m-5">
+      <section class="m-5 d-flex justify-content-center">
         <div class="row">
-          <div class="col text-center">
+          <div class="col-6 text-center">
             <img
               class="main-img"
               src="./images/image-product-1.jpg"
               alt="product image"
             />
-            <div class="d-flex my-5 justify-content-center">
+            <div class="d-flex my-5 justify-content-center gap-4">
               <img
-                class="mx-2 rounded thumb"
+                class="rounded thumb"
                 src="images/image-product-1-thumbnail.jpg"
                 alt=""
               />
               <img
-                class="mx-2 rounded thumb"
+                class="rounded thumb"
                 src="images/image-product-2-thumbnail.jpg"
                 alt=""
               />
               <img
-                class="mx-2 rounded thumb"
+                class="rounded thumb"
                 src="images/image-product-3-thumbnail.jpg"
                 alt=""
               />
               <img
-                class="mx-2 rounded thumb"
+                class="rounded thumb"
                 src="images/image-product-4-thumbnail.jpg"
                 alt=""
               />
             </div>
           </div>
-          <div class="col">
-            <p class="text-title">Sneaker Company</p>
-            <h3 class="display-5 text-black">Fall Limited Edition Sneakers</h3>
+          <div class="col-6">
+            <p class="text-title">SNEAKER COMPANY</p>
+            <h3 class="display-5 text-black fw-bolder">
+              Fall Limited Edition Sneakers
+            </h3>
 
-            <p>
+            <p class="my-4">
               These low-profile sneakers are your perfect casual wear companion.
               Featuring a durable rubber outer sole, they’ll withstand
               everything the weather can offer.
             </p>
-            $125.00 50% $250.00 0
-            <button class="btn px-5 py-1 btn-warning">Add to cart</button>
+            <div class="d-flex gap-3 align-items-center">
+              <p class="fw-bolder fs-3">$125.00</p>
+              <p class="orange fw-bold bg-orange px-2 rounded">50%</p>
+            </div>
+            <p class="dGrayBlue text-decoration-line-through">$250,00</p>
+            <div class="d-flex my-4 gap-3">
+              <div
+                class="d-flex bg-gBlue gap-4 align-items-center rounded px-3"
+              >
+                <span class="orange fw-bolder fs-4 btn">-</span>
+                <span class="text-black fw-bolder">0</span>
+                <span class="orange fw-bolder fs-4 btn">+</span>
+              </div>
+              <button class="btn px-5 py-2 btn-warning white">
+                <img src="images/icon-cart.svg" alt="" />
+                Add to cart
+              </button>
+            </div>
           </div>
         </div>
       </section>
