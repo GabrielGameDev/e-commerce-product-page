@@ -23,7 +23,13 @@ btn_plus.addEventListener('click', () => {
 
 function addToCart() {
     cartNumber.innerHTML = amount;
-    cartNumber.classList.remove('d-none');
-    cartNumber.classList.add('d-inline');
+    if (amount > 0) {
+        cartNumber.classList.remove('d-none');
+        cartNumber.classList.add('d-inline');
+    } else {
+        cartNumber.classList.remove('d-inline');
+        cartNumber.classList.add('d-none');
+    }
+
     
 }
