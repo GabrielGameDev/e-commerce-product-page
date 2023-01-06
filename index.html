@@ -74,7 +74,12 @@
           </div>
 
           <div class="position-relative">
-            <img src="./images/icon-cart.svg" alt="cart" class="mx-5 btn" />
+            <img
+              src="./images/icon-cart.svg"
+              alt="cart"
+              class="mx-5 btn"
+              onclick="showCart()"
+            />
             <span
               class="position-absolute bg-dark-orange rounded-circle px-2 text-white cart-number d-none"
               id="cart-number"
@@ -86,6 +91,13 @@
               alt="profile image"
               width="50px"
             />
+            <div
+              class="card text-bg-light mb-3 position-absolute d-none"
+              style="width: 20rem"
+            >
+              <div class="card-header fw-bolder">Cart</div>
+              <div class="card-body text-center"></div>
+            </div>
           </div>
         </div>
       </nav>
