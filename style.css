@@ -48,6 +48,7 @@
 
 .thumb{
     width: 80px;
+    padding: 0;
 }
 .thumb:hover{
     opacity: 0.5;

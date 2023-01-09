@@ -14,6 +14,9 @@ let cardVisible = false;
 
 let amount = 0
 
+const mainImage = document.querySelector('.main-img');
+console.log(mainImage)
+
 btn_less.addEventListener('click', () => {
     amount -= 1;
     if (amount < 0) {
@@ -61,3 +64,15 @@ function showCart(){
         cardCart.classList.add('d-none');
     }
 }
+
+function changeImage(image, e) {                                        
+    const thumbs = document.querySelectorAll('.thumb');
+    thumbs.forEach(thumb => {
+        thumb.classList.remove('thumb-active');
+        thumb.parentNode.classList.remove('active-background');
+    });
+    e.classList.add('thumb-active');
+    e.parentNode.classList.add('active-background');
+    mainImage.src = image;
+}
+    
